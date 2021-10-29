@@ -1,3 +1,15 @@
+# Testnet Faucet
+
+The most reliable way to get testnet tokens is from ChainLink : 
+https://docs.chain.link/docs/link-token-contracts/
+
+
+# OpenSea testnet
+
+OpenSea runs on the Rinkeby testnet
+
+
+
 # Advanced Sample Hardhat Project
 
 This project demonstrates an advanced Hardhat use case, integrating other tools commonly used alongside Hardhat in the ecosystem.
