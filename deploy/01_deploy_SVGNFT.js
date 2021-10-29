@@ -1,3 +1,6 @@
+const fs = require('fs')
+let { networkConfig } = require('../helper-hardhat-config')
+
 module.exports = async ({
     getNamedAccounts,
     deployments,
@@ -14,4 +17,12 @@ module.exports = async ({
         log: true
     })    
     log(`You have deployed an NFT contract to ${SVGNFT.address}`)
+    let svg = fs.readFileSync('./image/star.svg', {encoding: 'utf-8'});
+    const SVGNFTContract = await ethers.getContractFactory('SVGNFT');
+    const accounts = await hre.ethers.getSigners()
+    const signer = accounts[0]
+    const svgNFTInstance = new ethers.Contract(SVGNFT.address, SVGNFTContract.interface, signer)
+    const networkName = networkConfig[chainId]['name']
+    log(`Verify with:\n \tnpx hardhat verify --network ${networkName} ${SVGNFT.address}`)
+
 }
