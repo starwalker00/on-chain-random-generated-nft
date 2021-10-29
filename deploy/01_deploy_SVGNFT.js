@@ -13,5 +13,5 @@ module.exports = async ({
         from: deployer,
         log: true
     })    
-
+    log(`You have deployed an NFT contract to ${SVGNFT.address}`)
 }
