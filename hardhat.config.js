@@ -1,6 +1,9 @@
-require("dotenv").config();
+require("dotenv").config({ path: '.env.development.local' })
+const RINKEBY_URL = process.env.RINKEBY_URL
+const MNEMONIC = process.env.MNEMONIC
+const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY
 
-// require("@nomiclabs/hardhat-etherscan");
+require("@nomiclabs/hardhat-etherscan");
 require("@nomiclabs/hardhat-waffle");
 // require("hardhat-gas-reporter");
 // require("solidity-coverage");
@@ -33,18 +36,21 @@ module.exports = {
         // "goerli": '0x84b9514E013710b9dD0811c9Fe46b837a4A0d8E0', //it can also specify a specific netwotk name (specified in hardhat.config.js)
     },
   },
-  // networks: {
-  //   ropsten: {
-  //     url: process.env.ROPSTEN_URL || "",
-  //     accounts:
-  //       process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-  //   },
+  networks: {
+    hardhat: { },
+    rinkeby: {
+      url: RINKEBY_URL || "",
+      accounts: {
+        mnemonic: MNEMONIC !== undefined ? MNEMONIC : [],
+      },
+    },
+  },
   // },
   // gasReporter: {
   //   enabled: process.env.REPORT_GAS !== undefined,
   //   currency: "USD",
   // },
-  // etherscan: {
-  //   apiKey: process.env.ETHERSCAN_API_KEY,
-  // },
+  etherscan: {
+    apiKey: ETHERSCAN_API_KEY,
+  },
 };
