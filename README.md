@@ -7,7 +7,7 @@ https://docs.chain.link/docs/link-token-contracts/
 # OpenSea testnet
 
 OpenSea runs on the Rinkeby testnet
-
+https://testnets.opensea.io/
 
 
 # Advanced Sample Hardhat Project
