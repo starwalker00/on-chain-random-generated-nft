@@ -33,3 +33,5 @@ module.exports = async ({
     log(`You can view the tokenURI here ${await svgNFTInstance.tokenURI(0)}`)
 
 }
+
+module.exports.tags = ['all', 'svg']
