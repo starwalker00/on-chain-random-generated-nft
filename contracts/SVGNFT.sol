@@ -11,6 +11,7 @@ contract SVGNFT is ERC721URIStorage {
     // Events
     event SVGNFTCreated(address owner, uint256 indexed tokenId, string tokenURI);
 
+    // Constructor
     constructor() ERC721("SVG NFT", "SNFT") {
         tokenCounter = 0;
     }
