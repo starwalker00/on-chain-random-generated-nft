@@ -13,6 +13,12 @@ https://testnets.opensea.io/
 https://docs.chain.link/docs/chainlink-vrf/
 https://docs.chain.link/docs/vrf-contracts/
 
+## VRF Best Practices:
+https://docs.chain.link/docs/chainlink-vrf-best-practices/
+- Getting a random number within a range
+- Getting multiple random numbers **from one VRF request** (tl;dr: hash the random number with incrementing value)
+- Having multiple VRF requests in flightLink to this section
+
 # Advanced Sample Hardhat Project
 
 This project demonstrates an advanced Hardhat use case, integrating other tools commonly used alongside Hardhat in the ecosystem.
