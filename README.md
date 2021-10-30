@@ -9,6 +9,9 @@ https://docs.chain.link/docs/link-token-contracts/
 OpenSea runs on the Rinkeby testnet
 https://testnets.opensea.io/
 
+# ChainLink VRF
+
+https://docs.chain.link/docs/chainlink-vrf/
 
 # Advanced Sample Hardhat Project
 
