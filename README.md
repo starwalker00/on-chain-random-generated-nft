@@ -3,7 +3,6 @@
 The most reliable way to get testnet tokens is from ChainLink : 
 https://docs.chain.link/docs/link-token-contracts/
 
-
 # OpenSea testnet
 
 OpenSea runs on the Rinkeby testnet
@@ -12,6 +11,7 @@ https://testnets.opensea.io/
 # ChainLink VRF
 
 https://docs.chain.link/docs/chainlink-vrf/
+https://docs.chain.link/docs/vrf-contracts/
 
 # Advanced Sample Hardhat Project
 
