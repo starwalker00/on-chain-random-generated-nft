@@ -24,6 +24,7 @@
     "solidity-coverage": "^0.7.17"
   },
   "dependencies": {
+    "@chainlink/contracts": "^0.2.2",
     "@openzeppelin/contracts": "^4.3.2",
     "base64-sol": "^1.1.0",
     "fs": "^0.0.1-security"
