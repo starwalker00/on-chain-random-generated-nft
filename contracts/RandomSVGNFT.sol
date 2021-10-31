@@ -5,7 +5,9 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "base64-sol/base64.sol";
 import "@chainlink/contracts/src/v0.8/VRFConsumerBase.sol";
 
-contract RandomSVGNFT is ERC721URIStorage, VRFConsumerBase {
+import "@openzeppelin/contracts/access/Ownable.sol";
+
+contract RandomSVGNFT is ERC721URIStorage, VRFConsumerBase, Ownable {
     
     // State variables
     uint256 public tokenCounter;
