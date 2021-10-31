@@ -1,3 +1,21 @@
+# Summary
+
+Collection is visible at https://testnets.opensea.io/collection/randomsvg-nft
+Contracts addresses:
+- rinkeby: https://rinkeby.etherscan.io/address/0xA97FD2C89568Df1FB1ACa7269f3a10Fb3DdCad5C
+
+This is a project featuring :
+- NFT (ERC-721) creation
+- call to ChainLink VRF to randomize svg created as URI in NFT
+- deployment on local network
+- deployment on eth rinkeby testnet
+- contract verification via etherscan
+
+It uses:
+- Hardhat with [hardhat-deploy](https://www.npmjs.com/package/hardhat-deploy)
+- OpenZeppelin
+- ChainLink
+
 # Testnet Faucet
 
 The most reliable way to get testnet tokens is from ChainLink : 
