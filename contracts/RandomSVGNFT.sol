@@ -171,5 +171,10 @@ contract RandomSVGNFT is ERC721URIStorage, VRFConsumerBase, Ownable {
                     )
                 )
             );
-    }    
+    }   
+
+    function withdraw() public payable onlyOwner {
+        payable(owner()).transfer(address(this).balance);
+    }
+
 }
